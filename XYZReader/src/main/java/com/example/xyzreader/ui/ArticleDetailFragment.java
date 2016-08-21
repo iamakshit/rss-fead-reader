@@ -115,8 +115,7 @@ public class ArticleDetailFragment extends Fragment implements
         mStatusBarColorDrawable = new ColorDrawable(0);
 
 
-        FloatingActionButton fab = (FloatingActionButton) mRootView.findViewById(R.id.share_fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        mRootView.findViewById(R.id.appbar).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(Intent.createChooser(ShareCompat.IntentBuilder.from(getActivity())
@@ -194,8 +193,8 @@ public class ArticleDetailFragment extends Fragment implements
                                 Palette p = Palette.generate(bitmap, 12);
                                 mMutedColor = p.getDarkMutedColor(0xFF333333);
                                 mPhotoView.setImageBitmap(imageContainer.getBitmap());
-                                mRootView.findViewById(R.id.meta_bar)
-                                        .setBackgroundColor(mMutedColor);
+                              //  mRootView.findViewById(R.id.meta_bar)
+                                //        .setBackgroundColor(mMutedColor);
                                 updateStatusBar();
                             }
                         }

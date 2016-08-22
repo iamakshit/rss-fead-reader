@@ -1,9 +1,3 @@
-<!--
-References for UI:
-https://material.google.com/style/color.html
-https://guides.codepath.com/android/Handling-Scrolls-with-CoordinatorLayout
--->
-
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
